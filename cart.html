@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="vieport" content="width=device-width,initial-scale=1.0">
+        <title>All product-Redstored</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;300;400;700;800&display=swap">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body> 
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="cart.png"width="30px" height="30px"></a>
+            <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        
+    </div>
+<!---------cart items details----->
+       <div class="small-categories cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="tutul6.jpg">
+                        <div>
+                            <p>Red Printed T-Shairt</p>
+                            <small>Price:$50.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number"value="1"></td>
+                <td>$50.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="buy-2.jpg">
+                        <div>
+                            <p>Red Printed T-Shairt</p>
+                            <small>Price:$80.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number"value="1"></td>
+                <td>$80.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="buy-3.jpg">
+                        <div>
+                            <p>Red Printed T-Shairt</p>
+                            <small>Price:$65.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number"value="1"></td>
+                <td>$65.00</td>
+            </tr>
+        </table>
+         <div class="total-price">
+            <table>
+             <tr>
+                <td>Subtotal</td>
+                <td>$250.00</td>
+             </tr>
+             <tr>
+                <td>Tax</td>
+                <td>$45.00</td>
+             </tr>
+             <tr>
+                <td>total</td>
+                <td>$295.00</td>
+             </tr>
+           </table>
+         </div>
+
+       </div>
+     <!--------footer-----> 
+        <div class="footer">
+            <div class="container">
+              <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and fos mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="play-store.png">
+                        <img src="app-store.png">
+                    </div>
+                 </div>
+                 <div class="footer-col-2">
+                    <img src="logo-white.png">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and 
+                        Benefits <br>of Sports Accessible to the Many.</p>
+                 </div>
+                 <div class="footer-col3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                  </div>
+                    <div class="footer-col-4">
+                         <h3>Follow Links</h3>
+                         <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>YouTube</li>
+                        </ul>
+                 </div>
+              </div> 
+               <hr>
+               <p class="copyright">Copyright 2023 - Website</p>      
+            </div>
+        </div>  
+    <!---------js for toggle menu--> 
+         <script>
+            var MenuItems = document.getElementById("MenuItems");
+
+            MenuItems.style.maxHeight = "0px";
+            function menutoggle(){
+              if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px"
+                }
+              else
+                {
+                    MenuItems.style.maxHeight = "0px"
+                }
+            }
+         </script>
+
+    </body>
+</html>
